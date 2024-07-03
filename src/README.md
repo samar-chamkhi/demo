@@ -19,7 +19,7 @@ npm start
 ```
 2. Open http://localhost:3000/ in your browser.
 
-3. Use the Login button to authenticate with Auth0.
+3. Use the Login button to authenticate with Auth0(As individual or a client).
 
 ### Deployment 
 1. Build the project: 
