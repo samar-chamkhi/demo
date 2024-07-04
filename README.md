@@ -26,6 +26,50 @@ This project is a boilerplate for future Lyvoc Demo projects which contains seve
 - [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - [Auth0 Tenant](https://auth0.com/docs/get-started/auth0-overview/create-tenants)
 
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:Lyvoc/spa-okta-cic-auth0.git
+```
+
+2. Install the dependencies:
+
+```bash
+cd spa-okta-cic-auth0
+pnpm install
+```
+
+3. Follow the instructions in the `README.md` files in the `terraform` and `src` directories.
+
+## Production
+
+The applications in the `src` directory can be built for a production environment using the following commands:
+
+```bash
+pnpm run build
+```
+
+The deployment is managed by Github Actions and the applications are deployed to Cloudflare Pages and Cloudflare Workers.
+## Project Structure
+
+The repository is organized as follows:
+
+- **`terraform`**: Terraform modules to automate the deployment of an Auth0 Tenant.
+- **`src`**: React applications that use Auth0 for authentication.
+
+Note: Terraform resources include the following users.
+
+| Email                                 | Password       | Role                |
+| ------------------------------------- | -------------- | --------------------|
+| delegated.admin@yopmail.com           | passpass$12$12 | Dae Delegated admin |
+| auditor@yopmail.com                   | passpass$12$12 | Dae Auditor         |
+| it.admin@yopmail.com                  | passpass$12$12 | It Admin            |
+| admin.client@yopmail.com              | passpass$12$12 | Client Admin        |
+| client@yopmail.com                    | passpass$12$12 | Client user         |
+| user1@yopmail.com                     | passpass$12$12 | User                |
+
 ## Resources 
 - [Auth0 Documentation](https://auth0.com/docs)
 - [Auth0 Provider](https://registry.terraform.io/providers/auth0/auth0/latest/docs)

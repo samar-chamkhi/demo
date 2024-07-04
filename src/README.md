@@ -3,8 +3,8 @@ This project is a React Single Page Web Application that uses Auth0 for authenti
 The application can be run locally, by cloning the repository to your machine and then following the steps below.
 
 ## Getting started 
-# Prerequisites 
-- CloudFlare acccount 
+### Prerequisites 
+- CloudFlare account 
 - Auth0 Tenant 
 
 ### Configuration 
