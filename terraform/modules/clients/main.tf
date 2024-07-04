@@ -21,22 +21,6 @@ resource "auth0_client" "spa_client" {
   }
 }
 
-# resource "auth0_client" "ssr_client" {
-#   name                = "SSR Demo App"
-#   description         = "Regular Web App Client"
-#   app_type            = "regular_web"
-#   callbacks           = ["${var.ssr_url}/auth/callback"]
-#   allowed_logout_urls = [var.ssr_url]
-#   web_origins         = [var.ssr_url]
-
-#   oidc_conformant               = true
-#   organization_usage            = "allow"
-#   organization_require_behavior = "pre_login_prompt"
-
-#   jwt_configuration {
-#     alg = "RS256"
-#   }
-# }
 resource "auth0_client" "dae_app" {
   name                = "Delegated Admin App"
   description         = "DAE"
@@ -71,7 +55,6 @@ resource "auth0_client" "forms_app" {
   
 }
 # Create the Different Connections ----------------------------
-# Create a connection SADA_users 
 # This is an example of an Auth0 connection.
 
 resource "auth0_connection" "users" {

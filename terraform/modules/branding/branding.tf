@@ -1,6 +1,6 @@
 resource "auth0_branding" "brand" {
   colors {
-    primary         = "#0059d6"
+    primary         = "#008249"
     page_background = "#000000"
   }
 }
