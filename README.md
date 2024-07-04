@@ -57,7 +57,7 @@ The deployment is managed by Github Actions and the applications are deployed to
 The repository is organized as follows:
 
 - **`terraform`**: Terraform modules to automate the deployment of an Auth0 Tenant.
-- **`src`**: React applications that use Auth0 for authentication.
+- **`src`**: Javascript application that use Auth0 for authentin cation.
 
 Note: Terraform resources include the following users.
 
