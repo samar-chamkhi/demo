@@ -10,35 +10,45 @@ Terraform branding, clints and users modules'.
 2. clients : In this modules we create the different Apps(SPA & DAE, etc), the Connections and the organizations.
 3. users : In this modules we create the DAE roles, users for test.  
 
-### Configuration 
-1. Retrieve the Auth0 Domain and Client ID from the Auth0 Dashboard 
-2. Fill in the required config variables in the file ``auth_config.json``
-```bash 
-{
-  "domain": " ",
-  "clientId": " "
-}
-```
-### Development 
-1. Run the development server:
-```bash 
-cd src/spa
-npm start
-```
-2. Open http://localhost:3000/ in your browser.
+# Auth0 Terraform Tenant Deployment
 
-3. Use the Login button to authenticate with Auth0(As individual or a client).
+This project is a boilerplate for future Lyvoc Demo projects which contains several Terraform modules to automate the deployment of an Auth0 Tenant.
 
-### Deployment 
-1. Build the project: 
+## Getting Started
+
+### Configuration
+
+1. Create a new Auth0 Tenant.
+
+2. Follow the instructions in the [QuickStart guide](https://github.com/auth0/terraform-provider-auth0/blob/main/docs/guides/quickstart.md).
+
+3. Copy the `.env.example` file to `.env` and fill in the required environment variables.
+
+### Installation
+
+1. Install the dependencies:
 
 ```bash
-cd src/react-spa
-npm run build
+cd terraform
+terraform init
 ```
 
-2. Deploy the project:
+### Usage
+
+1. Plan the deployment:
 
 ```bash
-npx wrangler pages deploy ./dist --project-name <project-name>
+terraform plan
 ```
+
+2. Apply the deployment:
+
+```bash
+terraform apply
+```
+
+## Resources
+
+- [Auth0 Terraform Provider](https://registry.terraform.io/providers/auth0/auth0/latest/docs)
+- [Auth0 Documentation](https://auth0.com/docs/deploy-monitor/auth0-terraform-provider)
+- [Auth0 Terraform Examples](https://github.com/auth0/terraform-provider-auth0/tree/main/examples)
