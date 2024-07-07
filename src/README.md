@@ -47,5 +47,9 @@ npm run build
 2. Deploy the project:
 
 ```bash
-npx wrangler pages deploy ./dist --project-name <project-name>
+wrangler pages deploy ./dist --project-name <project-name>
 ```
+3. Copy the link returned on your CLI we need it for the SPA callbacks.
+
+
+
