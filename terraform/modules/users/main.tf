@@ -52,7 +52,7 @@ resource "auth0_user" "finance_admin" {
 resource "auth0_user" "client1_admin" {
   connection_name = var.client1_connection_name
   username        = "admin_client1"
-  email           = "admin.client@yopmail.com"
+  email           = "admin.client1@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
   # lifecycle {
@@ -79,10 +79,10 @@ resource "auth0_user" "user1" {
   #   ignore_changes = [roles]
   # }
 }
-resource "auth0_user" "client" {
+resource "auth0_user" "client1_user" {
   connection_name = var.client1_connection_name
-  username        = "client"
-  email           = "client@yopmail.com"
+  username        = "client1_user"
+  email           = "client1.user@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
   # lifecycle { 

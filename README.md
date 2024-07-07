@@ -67,7 +67,7 @@ Note: Terraform resources include the following users.
 | auditor@yopmail.com                   | passpass$12$12 | Dae Auditor         |
 | it.admin@yopmail.com                  | passpass$12$12 | It Admin            |
 | admin.client@yopmail.com              | passpass$12$12 | Client Admin        |
-| client@yopmail.com                    | passpass$12$12 | Client user         |
+| client1.user@yopmail.com              | passpass$12$12 | user of client1     |
 | user1@yopmail.com                     | passpass$12$12 | User                |
 
 ## Resources 

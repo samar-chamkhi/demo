@@ -60,5 +60,5 @@ function(ctx, callback) {
   
     // This is the payload that will be sent to API v2. You have full control over how the user is created in API v2.
     return callback(null, newProfile);
-   }
+}
   

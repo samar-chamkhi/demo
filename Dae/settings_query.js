@@ -33,5 +33,5 @@ function(ctx, callback) {
     default :
      return callback(null, {connections: [ 'SADA-users']});
     }
-   }
+}
   
