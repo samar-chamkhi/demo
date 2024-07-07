@@ -41,7 +41,7 @@ cd spa-okta-cic-auth0
 pnpm install
 ```
 
-3. Follow the instructions in the `README.md` files in the `terraform` and `src` directories.
+3. Follow the instructions in the `README.md` files in the `src` then `terraform` directories.
 
 ## Production
 
