@@ -25,9 +25,9 @@ resource "auth0_client" "dae_app" {
   name                = "Delegated Admin App"
   description         = "DAE"
   app_type            = "spa"
-  callbacks           = ["${var.dae_url}/login"]
+  # callbacks           = ["${var.dae_url}/login"]
   # "https://demo-sada.eu12.webtask.io/auth0-delegated-admin/login"
-  allowed_logout_urls = [var.dae_url]
+  # allowed_logout_urls = [var.dae_url]
 
   oidc_conformant               = true
   organization_usage            = "allow"
@@ -37,23 +37,23 @@ resource "auth0_client" "dae_app" {
     alg = "RS256"
   }
 }
-resource "auth0_client" "forms_app" {
-  name                = "Auth0 Forms App"
-  description         = "Forms"
-  app_type            = "non_interactive"
-  jwt_configuration {
-    alg = "RS256"
-    scopes = { 
-      "read:users"              = true,
-      "update:users"            = true,
-      "create:users"            = true,
-      "read:users_app_metadata" = true,
-      "update:users_app_metadata" = true,
-      "create:users_app_metadata" = true,
-    }
-  }
+# resource "auth0_client" "forms_app" {
+#   name                = "Auth0 Forms App"
+#   description         = "Forms"
+#   app_type            = "non_interactive"
+#   jwt_configuration {
+#     alg = "RS256"
+#     scopes = { 
+#       "read:users"              = true,
+#       "update:users"            = true,
+#       "create:users"            = true,
+#       "read:users_app_metadata" = true,
+#       "update:users_app_metadata" = true,
+#       "create:users_app_metadata" = true,
+#     }
+#   }
   
-}
+# }
 # Create the Different Connections ----------------------------
 # This is an example of an Auth0 connection.
 
