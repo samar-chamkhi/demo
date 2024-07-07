@@ -43,8 +43,8 @@ terraform plan
 
 3. Import : 
 ```bash
-terraform import auth0_client.tf_provider "M2M_application_CLIENT_ID" 
-terraform import module.auth0_clients.auth0_client.tf_provider "M2M_application_CLIENT_ID"  
+terraform import auth0_client.tf_provider "M2M_tf_provider_application_CLIENT_ID" 
+terraform import module.auth0_clients.auth0_client.tf_provider "M2M_tf_provider_application_CLIENT_ID"  
 ```
 
 4. Apply the deployment:
