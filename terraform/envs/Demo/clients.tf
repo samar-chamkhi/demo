@@ -9,5 +9,4 @@ module "auth0_clients" {
     # Okta connection domain
     okta_connetion_domain = "demo-yellow-smelt-12003.okta.com"
 
-
 }

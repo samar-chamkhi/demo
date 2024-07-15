@@ -63,14 +63,14 @@ resource "auth0_attack_protection" "attack_protection" {
     shields      = ["block", "user_notification"]
   }
 
-  breached_password_detection {
-    admin_notification_frequency = ["daily"]
-    enabled                      = true
-    method                       = "standard"
-    shields                      = ["admin_notification", "block"]
+  # breached_password_detection {
+  #   admin_notification_frequency = ["daily"]
+  #   enabled                      = true
+  #   method                       = "standard"
+  #   shields                      = ["admin_notification", "block"]
 
-    pre_user_registration {
-      shields = ["block"]
-    }
-  }
+  #   pre_user_registration {
+  #     shields = ["block"]
+  #   }
+  # }
 }

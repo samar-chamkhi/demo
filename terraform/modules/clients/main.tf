@@ -83,7 +83,7 @@ resource "auth0_connection" "users" {
 }
 
 resource "auth0_connection" "client1_database" {
-  name                 = "client1_database"
+  name                 = "client1-database"
   is_domain_connection = false
   strategy             = "auth0"
   options {
@@ -108,7 +108,7 @@ resource "auth0_connection" "client1_database" {
 }
 
 resource "auth0_connection" "client2_database" {
-  name                 = "client2_database"
+  name                 = "client2-database"
   is_domain_connection = false
   strategy             = "auth0"
   options {

@@ -5,9 +5,6 @@ resource "auth0_user" "dae_delegated_admin" {
   email           = "delegated.admin@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "dae_auditor" {
   connection_name = var.connection_name
@@ -15,9 +12,6 @@ resource "auth0_user" "dae_auditor" {
   email           = "auditor@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "it_admin" {
   connection_name = var.connection_name
@@ -25,9 +19,6 @@ resource "auth0_user" "it_admin" {
   email           = "it.admin@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "hr_admin" {
   connection_name = var.connection_name
@@ -35,9 +26,6 @@ resource "auth0_user" "hr_admin" {
   email           = "hr.admin@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "finance_admin" {
   connection_name = var.connection_name
@@ -45,9 +33,6 @@ resource "auth0_user" "finance_admin" {
   email           = "finance.admin@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "client1_admin" {
   connection_name = var.client1_connection_name
@@ -55,9 +40,6 @@ resource "auth0_user" "client1_admin" {
   email           = "admin.client1@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "client2_admin" {
   connection_name = var.client2_connection_name
@@ -65,19 +47,13 @@ resource "auth0_user" "client2_admin" {
   email           = "admin.client2@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle {
-  #   ignore_changes = [roles]
-  # }
-}
+ }
 resource "auth0_user" "user1" {
   connection_name = var.connection_name
-  username        = "user1"
+  username        = "test-user1"
   email           = "user1@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle { 
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "client1_user" {
   connection_name = var.client1_connection_name
@@ -85,9 +61,6 @@ resource "auth0_user" "client1_user" {
   email           = "client1.user@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle { 
-  #   ignore_changes = [roles]
-  # }
 }
 resource "auth0_user" "client2_user" {
   connection_name = var.client2_connection_name
@@ -95,9 +68,6 @@ resource "auth0_user" "client2_user" {
   email           = "client2.user@yopmail.com"
   email_verified  = true
   password        = "passpass$12$12"
-  # lifecycle { 
-  #   ignore_changes = [roles]
-  # }
 }
 
 # Create the Different Roles ------------------------------

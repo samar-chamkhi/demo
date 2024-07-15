@@ -30,7 +30,7 @@ const loginClient1 = async (targetUrl) => {
     const options = {
       authorizationParams: {
         redirect_uri: window.location.origin,
-        connection : 'customer-client1'
+        connection : 'client1-database'
       }
     };
 
@@ -50,7 +50,7 @@ const loginClient2 = async (targetUrl) => {
     const options = {
       authorizationParams: {
         redirect_uri: window.location.origin,
-        connection : 'customer-client2'
+        connection : 'client2-database'
       }
     };
 
